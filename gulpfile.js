@@ -16,14 +16,14 @@ gulp.task('css', function () {
         .pipe(gulp.dest('dist/css'))
 });
 
-gulp.task('image', function () {
+gulp.task('images', function () {
     return gulp.src('./src/image/**/*')
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('dist/image'));
 });
 
-gulp.task('default', ['css', 'image'], function () {
+gulp.task('default', ['css', 'images'], function () {
     gulp.watch('./src/css/**/*.css', ['css']);
-    gulp.watch('./src/image/**/*', ['image']);
+    gulp.watch('./src/image/**/*', ['images']);
 });
 
 
