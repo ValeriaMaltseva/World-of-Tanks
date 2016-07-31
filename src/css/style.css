@@ -83,7 +83,7 @@ a {
     letter-spacing: 1px;
     outline: none;
     box-sizing: border-box;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.1s ease-in-out;
     cursor: pointer;
 }
 
@@ -109,7 +109,7 @@ a {
     background: #000000;
     border: 2px solid #909090;
     border-radius: 2px;
-    transition: all 0.3s ease-out;
+    transition: all 0.1s ease-out;
     list-style: none;
     opacity: 0;
     pointer-events: none;
@@ -123,7 +123,7 @@ a {
     text-decoration: none;
     color: #333;
     padding: 10px;
-    transition: all 0.3s ease-out;
+    transition: all 0.1s ease-out;
 }
 
 .dropdown__item:hover {
@@ -204,19 +204,68 @@ a {
 }
 
 .footer__content--social {
-    padding: 20px 0;
+    position: relative;
+    padding: 14px 0 50px 0;
     border-bottom: 1px solid rgba(153, 153, 153, 0.5);
 }
 
-.footer-social__link img {
-    padding: 0 7px;
-    opacity: 0.7;
+.footer-social__link {
+    position: absolute;
+    background: url('../../dist/image/spritesheet.png')
 }
 
-.footer-social__link:hover img {
-    transform: rotateY(-30deg);
-    transition: all 0.3s ease-in-out;
+.link__tw {
+    left: 43%;
+    height: 29px;
+    width: 29px;
+    background-position: -35px -2px;
+    opacity: 0.5;
+}
+
+.link__google-plus {
+    top: 13px;
+    left: 49%;
+    width: 31px;
+    height: 30px;
+    background-position: -102px -82px;
+    opacity: 0.5;
+}
+
+.link__fb {
+    left: 55%;
+    width: 29px;
+    height: 29px;
+    background-position: -2px -2px;
+    opacity: 0.5;
+}
+
+.link__tw:hover,
+.link__google-plus:hover,
+.link__fb:hover {
     opacity: 1;
+    transform: rotateY(30deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.link__logo {
+    left: -105px;
+    top: 2px;
+    width: 203px;
+    height: 43px;
+    background-position: -2px -35px;
+    opacity: 0.5;
+}
+
+.link__logo:hover {
+    opacity: 1;
+}
+
+.link__teen {
+    top: -8px;
+    right: -100px;
+    width: 96px;
+    height: 53px;
+    background-position: -2px -82px;
 }
 
 .footer__content--copyright {
@@ -253,7 +302,7 @@ a {
     cursor: pointer;
 }
 
-@media (min-width: 320px) and (max-width: 750px) {
+@media (min-width: 320px) and (max-width: 850px) {
     .header__logo img,
     .form__input[type='email'],
     .select__dropdown {
@@ -264,8 +313,20 @@ a {
         font-size: 35px;
     }
 
-    .footer__logo,
-    .footer__teen {
+    .link__tw {
+        left: 30%;
+    }
+
+    .link__google-plus {
+        left: 49%;
+    }
+
+    .link__fb {
+        left: 68%;
+    }
+
+    .link__logo,
+    .link__teen {
         display: none;
     }
 }
