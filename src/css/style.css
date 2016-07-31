@@ -9,22 +9,22 @@ a {
     text-decoration: none;
 }
 
-.page-content {
+.page {
     text-align: center;
     background: url('../image/background.png') no-repeat fixed;
     background-size: cover;
 }
 
-.page-content__wrapper {
+.page__wrapper {
     margin: 0 auto;
     width: 95%;
 }
 
-.header__logo {
+.content__logo {
     padding: 75px 0;
 }
 
-.header__text {
+.content__text {
     text-transform: uppercase;
     color: #fff;
     text-shadow: -1px 1px 4px rgba(89, 14, 5, 0.65);
@@ -33,7 +33,7 @@ a {
     letter-spacing: 2px;
 }
 
-.header__form {
+.content__form {
     padding: 90px 0 100px 0;
 }
 
@@ -62,7 +62,7 @@ a {
     color: #c4c4c4;
 }
 
-.header__form--language {
+.content__form--language {
     padding: 15px 0;
 }
 
@@ -176,7 +176,17 @@ a {
     background: linear-gradient(#f57729, #c12c0e);
 }
 
-.page-content__footer {
+.form__button:hover {
+    transition: all 0.5s ease-out;
+    background-color: #eb3535;
+}
+
+.form__button:hover:before {
+    transition: all 0.5s ease-out;
+    background: linear-gradient(rgba(242, 54, 54, 0.75), rgba(253, 54, 54, 0.18));
+}
+
+.page__footer {
     position: relative;
     padding: 30px 0;
     width: 100%;
