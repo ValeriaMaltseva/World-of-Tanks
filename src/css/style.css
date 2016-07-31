@@ -178,12 +178,11 @@ a {
 
 .form__button:hover {
     transition: all 0.5s ease-out;
-    background-color: #eb3535;
+    background-color: #ff901f;
 }
 
 .form__button:hover:before {
-    transition: all 0.5s ease-out;
-    background: linear-gradient(rgba(242, 54, 54, 0.75), rgba(253, 54, 54, 0.18));
+   display: none;
 }
 
 .page__footer {
