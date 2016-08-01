@@ -51,8 +51,6 @@ a {
     letter-spacing: 1px;
     outline: none;
     box-sizing: border-box;
-    -webkit-transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
 }
 
@@ -112,7 +110,6 @@ a {
     transition: all 0.1s ease-out;
     list-style: none;
     opacity: 0;
-    pointer-events: none;
     z-index: 2;
 }
 
@@ -139,7 +136,6 @@ a {
 
 .select__dropdown.active .dropdown__box {
     opacity: 1;
-    pointer-events: auto;
 }
 
 .select__dropdown:focus,
