@@ -158,6 +158,7 @@ a {
     cursor: pointer;
     outline: none;
     z-index: 1;
+    transition: background-color 0.5s ease-out;
 }
 
 .form__button:before {
@@ -173,7 +174,6 @@ a {
 }
 
 .form__button:hover {
-    transition: all 0.5s ease-out;
     background-color: #ff901f;
 }
 
@@ -225,6 +225,7 @@ a {
     width: 29px;
     background-position: -35px -2px;
     opacity: 0.5;
+    transition: transform 0.3s ease-in-out;
 }
 
 .link__google-plus {
@@ -234,6 +235,7 @@ a {
     height: 30px;
     background-position: -102px -82px;
     opacity: 0.5;
+    transition: transform 0.3s ease-in-out;
 }
 
 .link__fb {
@@ -242,6 +244,7 @@ a {
     height: 29px;
     background-position: -2px -2px;
     opacity: 0.5;
+    transition: transform 0.3s ease-in-out;
 }
 
 .link__tw:hover,
@@ -249,7 +252,6 @@ a {
 .link__fb:hover {
     opacity: 1;
     transform: rotateY(30deg);
-    transition: all 0.3s ease-in-out;
 }
 
 .link__logo {
